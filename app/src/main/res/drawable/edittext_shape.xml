@@ -1,0 +1,14 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Прозрачная заливка -->
+    <solid android:color="@android:color/transparent" />
+
+    <!-- Рамка (цвет и толщина) -->
+    <stroke
+        android:width="2dp"
+        android:color="#8C8989" /> <!-- Красная рамка -->
+
+    <!-- Скругление углов (опционально) -->
+    <corners android:radius="8dp" />
+</shape>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#9039DF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:title="Регистрация"
+        app:titleTextColor="@color/white" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+
+        android:layout_marginBottom="120dp"
+        app:cardCornerRadius="30dp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+                android:text="Заполните данные"
+
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:layout_marginTop="20dp"
+
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+
+
+                android:background="@drawable/edittext_shape"
+                android:hint="Имя"
+                android:padding="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <EditText
+                android:id="@+id/userPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_margin="16dp"
+                android:background="@drawable/edittext_shape"
+                android:padding="8dp"
+
+                android:ems="10"
+                android:inputType="phone"
+
+                android:hint="Номер телефона"
+
+                app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+            <EditText
+                android:id="@+id/etBirthDate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="Дата рождения"
+
+                android:background="@drawable/edittext_shape"
+                android:padding="8dp"
+
+                app:layout_constraintTop_toBottomOf="@+id/userPhoneNumber" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonRegistration" />
+
+            <Button
+                android:id="@+id/buttonRegistration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etBirthDate"
+
+                android:layout_margin="16dp"
+                android:backgroundTint="#C0B1E8"
+
+                android:text="Регистрация"
+                android:textSize="16sp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginBottom="-25dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
